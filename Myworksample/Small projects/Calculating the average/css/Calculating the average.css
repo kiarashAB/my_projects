@@ -1,0 +1,14 @@
+.box{
+    max-width: 500px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    transition: all 0.5s;
+}
+
+.box:hover{
+    box-shadow: 1px 1px 55px rgb(117, 117, 117);
+    padding: 20px;
+}

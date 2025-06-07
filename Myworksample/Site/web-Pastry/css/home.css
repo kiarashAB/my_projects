@@ -1,0 +1,363 @@
+/* Storing Data */
+:root {
+    --sefid--: #F5EFFF;
+    --banafsh--: #A294F9;
+    --pinfk--: #e5d9f2:
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: B Yekan, cursive;
+    background-color: var(--sefid--);
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width:1183px;
+    background-color: var(--banafsh--);
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.6s;
+    flex-wrap: wrap;
+}
+
+/* left_header */
+.left_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+.left_header a {
+    color: #FFFFFF;
+}
+
+.left_header img {
+    max-width: 80px;
+}
+
+/* Right_header */
+.Right_header {
+    display: flex;
+    align-items: center;
+    width: 400px;
+
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin-right: 20px;
+}
+
+.li1::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background-color: #D1E9F6;
+    transition: all 0.6s;
+    margin-right:
+        40px;
+    border-radius: 10px;
+}
+
+
+.li2:after {
+    content: "";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background-color: #D1E9F6;
+    transition: all 0.6s;
+    margin-right:
+        15px;
+    border-radius: 10px;
+}
+
+.li3:after {
+    content: "";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background-color: #D1E9F6;
+    transition: all 0.6s;
+    margin-right:
+        30px;
+    border-radius: 10px;
+}
+
+.li4:after {
+    content: "";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0;
+    height: 3px;
+    background-color: #D1E9F6;
+    transition: all 0.6s;
+    margin-right:
+        20px;
+    border-radius: 10px;
+}
+
+li:hover::after {
+    width: 100%;
+    margin-right: 0;
+}
+
+.nav a {
+    color: #FFFFFF;
+}
+
+/* header_bottom */
+.header_botton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1183px;
+    padding: 5px;
+    transition: all 0.6s;
+}
+
+.header_botton_Rihght {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.637);
+    line-height: 96px;
+}
+
+.header_botton_buttom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 470px;
+}
+
+.btn_header_r {
+    width: 150px;
+    height: 48px;
+    border: none;
+    background-color: #A294F9;
+    color: var(--sefid--);
+    font-family: inherit;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.btn_header_l {
+    width: 150px;
+    border: none;
+    background-color: #ED78FF;
+    color: var(--sefid--);
+    font-family: inherit;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.btn_header_r:hover {
+    box-shadow: 1px 1px 25px 8px var(--banafsh--);
+    border: solid 10px var(--banafsh--);
+}
+
+.btn_header_l:hover {
+    box-shadow: 1px 1px 25px 8px #ED78FF;
+    border: solid 10px #ED78FF;
+}
+
+/* end header */
+main{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.main{
+    display: flex;    
+    background-color: var(--banafsh--);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+
+.pedarbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 205px;
+    background-color: #E5d9f2;
+    border-radius: 15px;
+}
+
+.box img{
+    border-radius: 15px 15px 0 0;
+}
+
+.box_p,
+.many{
+    cursor: context-menu;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.button{
+    padding: 0 20px 20px 20px;
+}
+
+.main_btn{
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: #ED78FF;
+    color: var(--sefid--);
+    font-family: inherit;
+    font-size: 1.1rem;
+    transition: all 0.5s;
+}
+
+.main_btn:hover {
+    box-shadow: 1px 1px 25px 8px #ED78FF;
+}
+
+/* respansiv */
+@media only screen and (max-width: 1230px) {
+    .header {
+        width:683px;
+    }
+
+    .header_botton{
+        width:683px;
+    }
+
+    .header_botton_Rihght {
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.637);
+        line-height: 56px;
+    }
+
+    .header_botton_left img{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 612px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        padding: 15px;
+    }
+
+    .left_header {
+        order: 0;
+
+    }
+
+    .Right_header {
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    li:hover::after {
+        display: none;
+    }
+
+    .header_botton{
+        flex-direction: column;
+        width: 450px;
+        gap: 20px;
+    }
+
+    .header_botton_Rihght{
+        order: 1;
+    }
+
+    .header_botton_left{
+        display: flex;
+        order: 0;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .header {
+        width: 300px;
+        margin: 2px;
+    }
+
+    .Right_header {
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+
+    }
+
+    .header_botton{
+        width: 300px;
+        margin: 2px;
+    }
+
+    .btn_header_r{
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .btn_header_l{
+        width: 100px;
+        font-size: 0.8rem;
+    }
+}

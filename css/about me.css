@@ -1,0 +1,175 @@
+:root {
+  --blak: #1E2029;
+  --white: #ffffff;
+  --purple: #9A6Aff;
+  --blu: #1e6ed1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--blak);
+}
+
+header {
+ background-color: var(--blak);
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.he {
+  max-width: 1224;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link:hover {
+  color: var(--blu);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.pedar-box{
+  display: flex;
+  justify-content: center;
+  margin-top:5%;
+}
+
+.box{
+  width: 67%;
+  color: var(--white);
+  padding: 6em;
+  background: var(--blak);
+  box-shadow: 10px 10px 15px #00000086;
+  border-radius: 25px;
+}
+
+footer {
+  width: 94.7%;
+  height: 5em;
+  padding: 2em 3em 5em 3em;
+  color: var(--white);
+  box-shadow: 5px 5px 20px #000000;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer b {
+  font-size: x-large;
+  margin-bottom: 1em;
+}
+
+.footer a {
+  display: block;
+  margin-top: 0.8em;
+  width: 15px;
+}
+
+.icon {
+  display: inline;
+  float: left;
+  font-size: x-large;
+  transition: 0.3s;
+}
+
+.icon a:hover {
+  color: var(--blu);
+}
+
+@media(max-width:1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 0;
+    top: -300%;
+    gap: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    top: 70px;
+  }
+
+  .footer {
+    width: 94%;
+    height: 9em;
+    padding: 0.7em;
+    position: relative;
+    margin-top: 1em;
+  }
+
+  .icon {
+    display: inline;
+    float: left;
+    font-size: large;
+    transition: 0.3s;
+  }
+}

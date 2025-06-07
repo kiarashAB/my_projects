@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    
+}
+
+.pedar{
+    width: 1200px;
+    margin-top: 2rem;
+    padding: 3rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.all{
+    font-size: 1.5rem;
+    color: #147aff;
+    cursor: pointer;
+}
+
+.con{
+    width: 1150px;
+    display: flex;
+    gap: 3rem;
+    /* overflow: hidden; */
+}
+
+.box{
+    width: 300px;
+    height: 350px;
+    box-shadow: 4px 1px 6px rgba(173, 173, 173, 0.5);
+    padding: 10px;
+    position: relative;
+    background-color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box:hover{
+    width: 400px;
+    height: 450px;
+    box-shadow: 4px 4px 46px rgba(99, 99, 99, 0.5);
+}
+
+.box p{
+    font-size: 14px;
+    color: #3f3f3f;
+    margin-top: 2rem;
+}
+
+.offer{
+ background-color: #147aff1f;
+ color: rgb(0, 89, 255);
+ border-radius: 5px;
+ position: absolute;
+ bottom: 47px;
+ padding: 2px;
+}
+
+.offer del{
+    position: absolute;
+    right: 30px;
+    bottom: 1px;
+    color: #747474;
+}
+
+.pol{
+    display: flex;
+    position: absolute;
+    bottom: 27px;
+    font-size: 13px;
+}
+
+.icon{
+    color: #747474;
+    position: absolute;
+    left: 25px;
+    bottom: 27px;
+}
+
+.ion{
+color: rgb(214, 214, 0);
+}
+
+@media (max-width: 1193px) {
+    .pedar{
+        width:1000px;
+    }
+
+    .con{
+        flex-wrap:wrap ;
+    }
+
+}
+
+@media (max-width: 980px) {
+    .pedar{
+        width:800px;
+    }
+
+    .con{
+        width: 800px;
+        flex-wrap:wrap ;
+        gap: 14rem;
+    }
+}
+
+@media (max-width: 860px){
+        .pedar{
+        width:330px;
+        margin-right: 10px;
+    }
+
+    .con{
+        width:330px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .box{
+        margin-bottom: 10px;
+    }
+
+    .box:hover{
+        width: 300px;
+        height: 350px;
+        box-shadow: 4px 1px 6px rgba(173, 173, 173, 0.5);
+    }
+}

@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --white: #ffffff;
+    --blak: #222222;
+    --blu: #10f5f5;
+    --ban: #6f3d99;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(128deg, rgba(245, 255, 163, 1) 0%, rgba(203, 255, 254, 1) 70%);
+}
+
+.pedar-form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 1200px;
+    height: 300px;
+    box-shadow: 5px 5px 70px black;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.formi {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid var(--ban);
+    transition: all 0.5s;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid var(--ban);
+    transition: all 0.5s;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 500px;
+    height: 40px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: var(--ban);
+    color: var(--white);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input:hover {
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 4px solid var(--ban);
+}
+
+textarea:hover {
+    width: 600px;
+    height: 110px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 4px solid var(--ban);
+}
+
+input:focus {
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 4px solid var(--ban);
+}
+
+textarea:focus {
+    width: 600px;
+    height: 110px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 4px solid var(--ban);
+}
+
+button:hover {
+    width: 600px;
+    height: 50px;
+    background-color: var(--blu);
+}

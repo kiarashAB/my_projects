@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --white: #ffffff;
+    --blak: #222222;
+    --blu: #10f5f5;
+    --ban: #6f3d99;
+}
+
+body {
+    background: linear-gradient(128deg, rgba(245, 255, 163, 1) 0%, rgba(203, 255, 254, 1) 70%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.pedar_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 1200px;
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 1px 1px 40px #22222254;
+    background-color: rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(30px);
+    transition: all 0.5s;
+}
+
+.login {
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 30px;
+}
+
+.Sing_Up {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 30px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid var(--ban);
+    transition: all 0.5s;
+}
+
+input:hover {
+    width: 450px;
+    height: 50px;
+    outline: 3px solid var(--ban);
+    box-shadow: 1px 1px 29px var(--ban);
+
+}
+
+input:focus {
+    width: 450px;
+    height: 50px;
+    outline: 3px solid var(--ban);
+    box-shadow: 1px 1px 29px var(--ban);
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: #f3f3f35b;
+    border: none;
+    outline: 1px solid var(--ban);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    width: 450px;
+    height: 50px;
+    outline: 3px solid var(--ban);
+    box-shadow: 1px 1px 29px var(--ban);
+}
+
+@media (max-width:1208px) {
+    .center{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .pedar_box{
+        display: flex;
+        flex-direction: column;
+        width: 564px;
+        height: 665px;
+    }
+
+}
+
+@media (max-width:568px) {
+    .pedar_box{
+        width: 364px;
+        height: 565px;
+    }
+
+    .login{
+        width: 304px;
+        gap: 20px;
+    }
+
+    .Sing_Up{
+        width: 304px;
+        gap: 20px;
+    }
+
+    input{
+        width: 250px;
+
+    }
+
+    input:hover {
+        width: 250px;
+        height: 50px;
+        outline: 1px solid var(--ban);
+        box-shadow: none;
+    }
+    
+    input:focus {
+        width: 300px;
+        outline: 1px solid var(--ban);
+        box-shadow: 1px 1px 29px var(--ban);
+    }
+
+    button{
+        width: 250px;
+    }
+
+    button:hover {
+        width: 300px;
+        outline: 1px solid var(--ban);
+        box-shadow: 1px 1px 29px var(--ban);
+    }
+}

@@ -1,0 +1,593 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+:root {
+    --white: #ffffff;
+    --blak: #222222;
+    --blu: #10f5f5;
+    --ban: #6f3d99;
+}
+
+header {
+    color: var(--blak);
+}
+
+li {
+    list-style: none;
+    color: var(--blak);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    color: var(--blak);
+}
+
+.container {
+    width: 100%;
+    ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 75px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.nav-link {
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.drop-down {
+    visibility: hidden;
+    position: absolute;
+    background-color: #cacaca3a;
+    backdrop-filter: blur(9.5px);
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    top: 75px;
+    padding: 20px;
+    transition: all 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.drop-down a:hover {
+    color: var(--blu);
+}
+
+.drop-down li {
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.nav-item:hover .drop-down {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-link:hover {
+    color: var(--blu);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var(--blak);
+}
+
+.sabt {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 30px;
+    gap: 10px;
+    transition: all 0.5s;
+
+}
+
+.porof:hover svg {
+    color: var(--blu);
+}
+
+.add_sabad {
+    visibility: hidden;
+    width: 400px;
+    height: 600px;
+    background-color: var(--white);
+    border: 1px solid #22222265;
+    border-radius: 10px;
+    position: absolute;
+    left: 60px;
+    transition: all 0.5s;
+}
+
+.item{
+    display: flex;
+    width: 370px;
+    height: 80px;
+    margin:  10px 10px 40px 10px;
+    font-size: 10px;
+}
+
+.item button{
+    background-color: red;
+}
+
+.item button:hover{
+    background-color: red;
+}
+
+.sabad:hover .add_sabad{
+    visibility: visible; 
+}
+
+
+
+.ce {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-image: url("../logo/photo_2024-12-24_11-33-51.jpg");
+    transition: all 0.5s;
+}
+
+.ce:hover{
+    box-shadow: 1px 10px 100px var(--ban);
+}
+
+.link_photo {
+    display: flex;
+    width: 1200px;
+    height: 793.250px;
+    gap: 20px;
+}
+
+img {
+    
+    border-radius: 15px;
+}
+
+.sl {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.s2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.s3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.link_photo_1 {
+    width: 570px;
+    height: 222.750;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo_2 {
+    width: 570px;
+    height: 222.750;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo_3 {
+    width: 570px;
+    height: 222.750;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo1 {
+    width: 270px;
+    height: 360px;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo2 {
+    width: 270px;
+    height: 360px;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo-1 {
+    width: 270px;
+    height: 360px;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo-2 {
+    width: 270px;
+    height: 360px;
+    transition: all 0.5s 0.15s;
+}
+
+.link_photo1:hover {
+    width: 370px;
+    height: 480px;
+}
+
+.link_photo2:hover {
+    width: 370px;
+    height: 480px;
+}
+
+.link_photo_1:hover {
+    width: 670px;
+    height: 322.750;
+}
+
+.link_photo_2:hover {
+    width: 670px;
+    height: 322.750;
+}
+
+.link_photo_3:hover {
+    width: 670px;
+    height: 322.750;
+}
+
+.link_photo-2:hover {
+    width: 370px;
+    height: 480px;
+}
+
+.link_photo-1:hover {
+    width: 370px;
+    height: 480px;
+}
+
+.tex--box {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    height: 100px;
+}
+
+p {
+    font-size: 24px;
+}
+
+samp {
+    font-size: 17px;
+    font-family: inherit;
+    color: #2222229f;
+}
+
+.box-c {
+    display: flex;
+    justify-content: center;
+}
+
+.box-b {
+    display: flex;
+    width: 1100px;
+    height: 500px;
+    gap: 40px;
+    padding: 30px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgb(110, 110, 110);
+    transition: all 0.5s;
+}
+
+.box p {
+    font-size: 15px;
+    
+}
+
+.box:hover {
+    padding: 40px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+button {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 7px 10px 7px;
+    margin-top: 10px;
+    background-color: #680db3b7;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #680db3;
+}
+
+@media(max-width:1212px) {
+    .ce {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .link_photo {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .link_photo_1 {
+        width: 540px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo_2 {
+        width: 540px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo_3 {
+        width: 540px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo1 {
+        width: 300px;
+        height: 400px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo2 {
+        width: 300px;
+        height: 400px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo-1 {
+        width: 300px;
+        height: 400px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo-2 {
+        width: 300px;
+        height: 400px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo1:hover {
+        width: 300px;
+        height: 400px;
+    }
+
+    .link_photo2:hover {
+        width: 300px;
+        height: 400px;
+    }
+
+    .link_photo_1:hover {
+        width: 540px;
+        height: 22.750;
+    }
+
+    .link_photo_2:hover {
+        width: 540px;
+        height: 22.750;
+    }
+
+    .link_photo_3:hover {
+        width: 540px;
+        height: 22.750;
+    }
+
+    .link_photo-2:hover {
+        width: 300px;
+        height: 400px;
+    }
+
+    .link_photo-1:hover {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+
+@media(max-width:1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #cacaca3a;
+        backdrop-filter: blur(9.5px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        outline: auto;
+    }
+
+    .drop-down {
+        visibility: hidden;
+        opacity: 1;
+        position: absolute;
+        border-radius: 10px;
+        border: none;
+        top: 12px;
+        padding: 0;
+        transition: all 0s;
+    }
+
+    .nav-item:hover .drop-down {
+        position: relative;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .link_photo {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .link_photo_1 {
+        width: 240px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo_2 {
+        width: 240px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo_3 {
+        width: 240px;
+        height: 22.750;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo1 {
+        width: 150px;
+        height: 200px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo2 {
+        width: 150px;
+        height: 200px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo-1 {
+        width: 150px;
+        height: 200px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo-2 {
+        width: 150px;
+        height: 200px;
+        transition: all 0.5s 0.15s;
+    }
+
+    .link_photo1:hover {
+        width: 240px;
+        height: 22.750
+    }
+
+    .link_photo2:hover {
+        width: 240px;
+        height: 22.750
+    }
+
+    .link_photo_1:hover {
+        width: 240px;
+        height: 22.750;
+    }
+
+    .link_photo_2:hover {
+        width: 240px;
+        height: 22.750;
+    }
+
+    .link_photo_3:hover {
+        width: 240px;
+        height: 22.750;
+    }
+
+    .link_photo-2:hover {
+        width: 240px;
+        height: 22.750
+    }
+
+    .link_photo-1:hover {
+        width: 240px;
+        height: 22.750
+    }
+
+    .box-b {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .box:hover {
+        padding: 10px;
+    }
+}
