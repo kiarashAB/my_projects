@@ -69,7 +69,7 @@ const rendercartitem = () => {
   const jamdiv = document.querySelector('.jam')
   let totalorice = 0
   if (cart.items.length === 0) {
-    cartdiv.innerHTML = 'سبد خرید خالی هست'
+    cartdiv.innerHTML = 'سبد خرید خالی است'
   }
   cart.items.forEach((item) => {
     totalorice += item.total
