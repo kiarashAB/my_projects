@@ -24,13 +24,8 @@ color: var(--white);
 }
 
 body.dark
-header{
-    background-color: #3b3b3b81;
-}
-
-body.dark
-.Header li:hover{
-color: var(--blu);
+.Header{
+    background-color: #3b3b3b;
 }
 
 body.dark
@@ -41,6 +36,11 @@ body.dark
 body.dark 
 .Darkmod:hover{
     background-color: #3f3f3f59;
+}
+
+body.dark
+.blur_but{
+    background-color: #3a3a3a8c;
 }
 /* Daek mod */
 html {
@@ -58,8 +58,7 @@ header{
 
 .Header{
     padding: 20px;
-    background-color: rgba(201, 201, 201, 0.404);
-    backdrop-filter: blur(10px);
+    background-color: rgb(201, 201, 201);
     display: flex;
     font-size: 1.7rem;
     justify-content: space-between;
@@ -124,4 +123,50 @@ header{
 .Logo .P_Logo{
     font-size: 2rem;
     margin-right: 10px;
+}
+
+.but_he{
+    height: 500px;
+}
+
+.blur_but{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Heder_p{
+   font-size: 2.6rem;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.Btn_Header{
+    display: flex;
+    gap: 40px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    background: linear-gradient(90deg,rgba(45, 174, 224, 1) 0%, rgba(109, 87, 199, 1) 53%, rgba(206, 87, 233, 1) 98%);
+    color: var(--white);
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    box-shadow: 2px 5px 30px rgb(75, 75, 75);
 }
