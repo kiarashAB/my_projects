@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'font';
+    src: url('') format(''),
+    url('') format(''),
+    url('./BYekan+\ Bold.ttf') format('truetype'),
+    url('') format('');
+    font-weight:bold;
+    font-style: bold;
+  }
+body{
+    font-family:font;
+}

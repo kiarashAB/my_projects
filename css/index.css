@@ -8,3 +8,26 @@
 html {
     font-size: 10px;
 }
+
+header{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.466);
+    backdrop-filter: blur(10px);
+}
+
+.Header{
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Re_Header ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    :hover{
+        color: rgb(167, 167, 167);
+    }
+}
