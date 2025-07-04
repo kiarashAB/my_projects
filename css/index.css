@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: var(--blak);
 }
 /* Daek mod */
 body.dark {
@@ -25,13 +24,23 @@ color: var(--white);
 }
 
 body.dark
+header{
+    background-color: #3b3b3b81;
+}
+
+body.dark
 .Header li:hover{
 color: var(--blu);
 }
 
 body.dark
-header{
-background-color: #3b3b3b81;
+.Le_Header{
+    color: var(--white);
+}
+
+body.dark 
+.Darkmod:hover{
+    background-color: #3f3f3f59;
 }
 /* Daek mod */
 html {
@@ -44,12 +53,13 @@ body{
 
 header{
     width: 100%;
-    padding: 10px;
-    background-color: rgba(201, 201, 201, 0.404);
-    backdrop-filter: blur(10px);
+    background-image: url("/photo/25dc673d-95c0-4e12-8f99-8d2bd43ca9c5.jpg");
 }
 
 .Header{
+    padding: 20px;
+    background-color: rgba(201, 201, 201, 0.404);
+    backdrop-filter: blur(10px);
     display: flex;
     font-size: 1.7rem;
     justify-content: space-between;
@@ -62,14 +72,28 @@ header{
     list-style: none;
     transition: all 0.5s;
     cursor: pointer;
-    :hover{
-        color:var(--blu);
-        transition: all 0.5s;
-    }
+}
+
+.Re_Header li {
+    color: var(--blak);
+}
+
+.Re_Header li:after {
+    content: "";
+    transition: all 0.5s;
+}
+.Re_Header li:hover::after {
+    content: "";
+    display: flex;
+    width: 50px;
+    height: 3px;
+    background-color: var(--blu);
+    transition: all 0.5s;
 }
 
 .Le_Header{
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -78,7 +102,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 6px;
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -86,8 +110,18 @@ header{
 .Darkmod:hover{
     background-color: #d6d6d6;
     border-radius: 13px;
+    color: var(--blu);
 }
 
 .Darkmod .none{
     display: none;
+}
+
+.Le_box .none{
+    display: none;
+}
+
+.Logo .P_Logo{
+    font-size: 2rem;
+    margin-right: 10px;
 }
