@@ -1,18 +1,51 @@
+:root {
+    --blak: #0A0A0C;
+    --white: #e4e4e4;
+    --blu: #194BFD;
+}
+
 * {
     box-sizing: border-box;
     outline: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: var(--blak);
+}
+/* Daek mod */
+body.dark {
+    background-color: #0A0A0C;
+    color: var(--white);
 }
 
+body.dark
+.Header li{
+color: var(--white);
+
+}
+
+body.dark
+.Header li:hover{
+color: var(--blu);
+}
+
+body.dark
+header{
+background-color: #3b3b3b81;
+}
+/* Daek mod */
 html {
     font-size: 10px;
+}
+
+body{
+    transition: all 0.5s;
 }
 
 header{
     width: 100%;
     padding: 10px;
-    background-color: rgba(240, 248, 255, 0.466);
+    background-color: rgba(201, 201, 201, 0.404);
     backdrop-filter: blur(10px);
 }
 
@@ -27,7 +60,34 @@ header{
     display: flex;
     gap: 15px;
     list-style: none;
+    transition: all 0.5s;
+    cursor: pointer;
     :hover{
-        color: rgb(167, 167, 167);
+        color:var(--blu);
+        transition: all 0.5s;
     }
+}
+
+.Le_Header{
+    display: flex;
+    gap: 15px;
+}
+
+.Darkmod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Darkmod:hover{
+    background-color: #d6d6d6;
+    border-radius: 13px;
+}
+
+.Darkmod .none{
+    display: none;
 }
