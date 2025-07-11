@@ -63,7 +63,7 @@ body{
 
 header{
     width: 100%;
-    background-image: url("/photo/aaa.jpg");
+    background-image: url("https://raw.githubusercontent.com/kiarashAB/my_projects/refs/heads/v2/photo/aaa.jpg");
 }
 
 .Header{
