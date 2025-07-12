@@ -54,15 +54,15 @@ body.dark .BOx {
 }
 
 body.dark a,
-body.dark .abutme p{
+body.dark .abutme p {
     color: rgba(255, 255, 255, 0.452);
 }
 
-body.dark .abutme .p1{
+body.dark .abutme .p1 {
     color: #3f7ef3;
 }
 
-body.dark a:hover{
+body.dark a:hover {
     color: rgb(39, 107, 255);
 }
 
@@ -154,7 +154,7 @@ header {
     display: none;
 }
 
-.Language{
+.Language {
     cursor: pointer;
 }
 
@@ -192,6 +192,7 @@ header {
 
 .Btn_Header {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -385,7 +386,7 @@ header {
     color: white;
 }
 
-.navbu{
+.navbu {
     display: flex;
     padding: 20px;
     background-color: rgba(201, 201, 201, 0.295);
@@ -401,7 +402,7 @@ header {
     display: none;
 }
 
-.navbu ul{
+.navbu ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -450,51 +451,55 @@ a {
     transition: all 0.3s;
 }
 
-a:hover{
-        color: rgba(4, 121, 255, 0.774);
-    }
+a:hover {
+    color: rgba(4, 121, 255, 0.774);
+}
 
 .khadmat ul,
 .link ul,
-.call ul{
+.call ul {
     text-decoration: none;
     list-style: none;
 }
 
-.footer_butten{
+.footer_butten {
     display: flex;
     padding-top: 40px;
     justify-content: center;
     align-items: center;
-    border-top:solid 1px #02021a;
+    border-top: solid 1px #02021a;
 }
 
 @media (max-width:1458px) {
-     .Header.scrolled {
+    .Header.scrolled {
         width: 700px;
         left: 26%;
     }
 
-    .projeBox{
+    .projeBox {
         gap: 60px;
     }
 }
 
-@media(max-width:1052px){
-    .Header.scrolled{
-        left:20%;
+@media(max-width:1052px) {
+    .Header.scrolled {
+        left: 20%;
     }
 }
 
 @media(max-width:956px) {
-    .Header ul{
+    .Header ul {
         display: none;
-        width:100px;
+        width: 100px;
     }
 
     .Header.scrolled {
         width: 250px;
-        left:29%;
+        left: 29%;
+    }
+
+    .Heder_p {
+        font-size: 1.8rem;
     }
 
     .navbu {
@@ -503,6 +508,37 @@ a:hover{
 
 
     footer {
-        margin-bottom: 65px;
+        margin-bottom: 35px;
+    }
+}
+
+@media(max-width:690px) {
+    .navbu {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+    }
+}
+
+@media(max-width:477px) {
+    .Header.scrolled {
+        width: 100%;
+        left: 0;
+    }
+
+    .blur_but {
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .btN {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 30px;
+        
     }
 }
