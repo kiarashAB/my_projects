@@ -77,7 +77,7 @@ body {
 
 header {
     width: 100%;
-    background-image: url("my_projects/photo/aaa.jpg");
+    background-image: url("/my_projects/photo/aaa.jpg");
     transition: all 0.5s;
 }
 
