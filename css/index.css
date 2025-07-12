@@ -1,5 +1,5 @@
 :root {
-    --blak: #0A0A0C;
+    --blak: #03031f;
     --white: #e4e4e4;
     --blu: #194BFD;
 }
@@ -11,71 +11,97 @@
     padding: 0;
     text-decoration: none;
 }
+
 /* Daek mod */
 body.dark {
-    background-color: #0A0A0C;
+    background-color: #02021a;
     color: var(--white);
 }
 
-body.dark
-.Header li{
-color: var(--white);
+body.dark .Header li {
+    color: var(--white);
 
 }
 
-body.dark
-.Header{
-    background-color: #3b3b3b;
+body.dark .Header {
+    background-color: #13133a9a;
 }
 
-body.dark
-.Le_Header{
+body.dark .Le_Header {
     color: var(--white);
 }
 
-body.dark 
-.Darkmod:hover{
+body.dark .Darkmod:hover {
     background-color: #3f3f3f59;
 }
 
-body.dark
-.blur_but{
+body.dark .blur_but {
     background-color: #3a3a3a8c;
 }
 
-body.dark
-.BoxAmar{
+body.dark .BoxAmar {
     background-color: #2424248c;
 }
 
-body.dark
-.Box{
+body.dark .Box {
     background-color: #0000008c;
 }
+
+body.dark .BOx {
+    background-color: #2424248c;
+    box-shadow: none;
+}
+
+body.dark a,
+body.dark .abutme p{
+    color: rgba(255, 255, 255, 0.452);
+}
+
+body.dark .abutme .p1{
+    color: #3f7ef3;
+}
+
+body.dark a:hover{
+    color: rgb(39, 107, 255);
+}
+
 /* Daek mod */
 html {
     font-size: 10px;
 }
 
-body{
+body {
     transition: all 0.5s;
 }
 
-header{
+header {
     width: 100%;
-    background-image: url("my_projects/photo/aaa.jpg");
+    background-image: url("/photo/aaa.jpg");
+    transition: all 0.5s;
 }
 
-.Header{
+.Header {
     padding: 20px;
-    background-color: rgb(201, 201, 201);
+    background-color: rgba(201, 201, 201, 0.295);
     display: flex;
     font-size: 1.7rem;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(20px);
+    transition: all 0.5s;
 }
 
-.Re_Header ul{
+.Header.scrolled {
+    width: 1200px;
+    position: fixed;
+    top: 10px;
+    left: 20%;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: rgba(201, 201, 201, 0.295);
+}
+
+.Re_Header ul {
     display: flex;
     gap: 15px;
     list-style: none;
@@ -91,6 +117,7 @@ header{
     content: "";
     transition: all 0.5s;
 }
+
 .Re_Header li:hover::after {
     content: "";
     display: flex;
@@ -100,13 +127,13 @@ header{
     transition: all 0.5s;
 }
 
-.Le_Header{
+.Le_Header {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.Darkmod{
+.Darkmod {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,30 +143,30 @@ header{
     transition: all 0.5s;
 }
 
-.Darkmod:hover{
+.Darkmod:hover {
     background-color: #d6d6d6;
     border-radius: 13px;
     color: var(--blu);
 }
 
-.Darkmod .none{
+.Darkmod .none {
     display: none;
 }
 
-.Le_box .none{
+.Le_box .none {
     display: none;
 }
 
-.Logo .P_Logo{
+.Logo .P_Logo {
     font-size: 2rem;
     margin-right: 10px;
 }
 
-.but_he{
+.but_he {
     height: 500px;
 }
 
-.blur_but{
+.blur_but {
     width: 100%;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.37);
@@ -150,15 +177,15 @@ header{
     justify-content: center;
 }
 
-.Heder_p{
-   font-size: 2.6rem;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   gap: 20px;
+.Heder_p {
+    font-size: 2.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.Btn_Header{
+.Btn_Header {
     display: flex;
     gap: 40px;
 }
@@ -172,16 +199,16 @@ header{
     padding: 20px;
     width: 300px;
     cursor: pointer;
-    background: linear-gradient(90deg,rgba(45, 174, 224, 1) 0%, rgba(109, 87, 199, 1) 53%, rgba(206, 87, 233, 1) 98%);
+    background: linear-gradient(90deg, rgba(45, 174, 224, 1) 0%, rgba(109, 87, 199, 1) 53%, rgba(206, 87, 233, 1) 98%);
     color: var(--white);
     transition: all 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: 2px 5px 30px rgb(75, 75, 75);
 }
 
-.Pedarbox_Khadamat{
+.Pedarbox_Khadamat {
     width: 100%;
     padding: 30px;
     display: flex;
@@ -192,11 +219,11 @@ header{
     font-size: 1.9rem;
 }
 
-.TitelPedarbox{
+.TitelPedarbox {
     font-size: 3.4rem;
 }
 
-.box_Khadamat{
+.box_Khadamat {
     background-color: #33ff003a;
     padding: 20px;
     display: flex;
@@ -209,23 +236,23 @@ header{
     transition: all 0.5s;
 }
 
-.titelbox{
+.titelbox {
     font-size: 2.3rem;
 }
 
-.pbox{
+.pbox {
     font-size: 1.9rem;
 }
 
-.box_Khadamat:hover{
+.box_Khadamat:hover {
     box-shadow: 0 0 5px #48ff00,
-    0 0 10px #48ff00,
-    0 0 15px #48ff00,
-    0 0 60px #48ff00,
-    0 0 35px #48ff00;
+        0 0 10px #48ff00,
+        0 0 15px #48ff00,
+        0 0 60px #48ff00,
+        0 0 35px #48ff00;
 }
 
-.BoxAmar{
+.BoxAmar {
     width: 100%;
     padding: 30px;
     display: flex;
@@ -235,7 +262,7 @@ header{
     background-color: #ececec;
 }
 
-.Box{
+.Box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,8 +270,172 @@ header{
     padding: 30px;
     background-color: white;
     border-radius: 7px;
+    transition: all 0.5s;
 }
-.Box h2{
+
+.Box h2 {
     color: #48ff00;
     font-size: 3.4rem;
+}
+
+.Box:hover {
+    box-shadow: 0 0 11px #194BFD,
+        0 0 13px #5d19fd,
+        0 0 28px #790097;
+}
+
+.titleBOx {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+}
+
+.projeBox {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.BOx {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 50px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    gap: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 5px 5px 40px rgba(119, 119, 119, 0.301);
+}
+
+.BOx img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.BOx h3 {
+    font-size: 1.8rem;
+}
+
+.BtnBOx {
+    font-family: inherit;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #003cff;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.BtnBOx:hover {
+    background-color: #002cbd;
+}
+
+.BOx:hover {
+    transform: scale(1.05);
+}
+
+.startproje {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 50px;
+    background: linear-gradient(83deg, rgba(170, 0, 255, 1) 0%, rgba(47, 0, 255, 1) 100%);
+    gap: 10px;
+}
+
+.titelstartproje {
+    font-size: 3rem;
+}
+
+.Btn {
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1.8rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-left: 10px;
+}
+
+.Btn:hover {
+    color: #cc00ff;
+}
+
+.full {
+    background-color: #ffffff00;
+    border: solid 2px white;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    font-size: 1.8rem;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.abutme {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: rgba(15, 15, 15, 0.795);
+}
+
+.p1 {
+    font-size: 3rem;
+    color: #3f7ef3;
+}
+
+.abutmeicon {
+    display: flex;
+    gap: 20px;
+}
+
+svg {
+    width: 30px;
+}
+
+a {
+    color: rgba(15, 15, 15, 0.712);
+    transition: all 0.3s;
+}
+
+a:hover{
+        color: rgba(4, 121, 255, 0.774);
+    }
+
+.khadmat ul,
+.link ul,
+.call ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer_butten{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    border-top:solid 1px #02021a;
 }

@@ -7,6 +7,7 @@ document.getElementById("Home_Eror").addEventListener("click", () => {
 const body = document.getElementsByTagName("body")[0];
 const moon = document.getElementById("bi-moon");
 const sun = document.getElementById("bi-sun");
+
 document.getElementById("Darkmod").addEventListener("click", () => {
     body.classList.toggle("dark");
     sun.classList.toggle("none");
@@ -27,12 +28,44 @@ if (localStorage.getItem("theme") === "dark") {
     moon.classList.remove("none");
 }
 
-document.getElementById("Le_box").style.cursor = "pointer";
-
 document.getElementById("Le_box").addEventListener("click", () => {
-    document.getElementById("F").classList.toggle("none");
-    document.getElementById("E").classList.toggle("none");
+    const farsi = document.getElementById("F");
+    const english = document.getElementById("E");
+
+    farsi.classList.toggle("none");
+    english.classList.toggle("none");
+
+
+    if (english.classList.contains("none")) {
+        localStorage.setItem("lang", "fa");
+    } else {
+        localStorage.setItem("lang", "en");
+    }
+
+    function updateLanguage() {
+        const lang = localStorage.getItem("lang") || "fa";
+    
+        if (lang === "en") {
+            document.getElementById("F").classList.add("none");
+            document.getElementById("E").classList.remove("none");
+    
+            // اینجارو با ترجمه‌های خودت پر کن
+            document.getElementById("Home_Eror").innerText = "Home";
+            // بقیه المان‌ها رو هم تغییر بده
+            // مثلاً:
+            // document.querySelector("#nav-about").innerText = "About Me";
+    
+        } else {
+            document.getElementById("F").classList.remove("none");
+            document.getElementById("E").classList.add("none");
+    
+            document.getElementById("Home_Eror").innerText = "خانه";
+            // بقیه المان‌ها...
+        }
+    }
+    updateLanguage();
 });
+
 
 const abutkiarash = {
     name: "کیارش",
@@ -71,3 +104,15 @@ document.querySelector(".BoxAmar").innerHTML =
             <p>سال تجربه</p>
         </div>
 `
+
+window.addEventListener("scroll", ()=>{
+    const header = document.getElementById("hedear");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+});
