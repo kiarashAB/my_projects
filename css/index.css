@@ -23,7 +23,8 @@ body.dark .Header li {
 
 }
 
-body.dark .Header {
+body.dark .Header,
+body.dark .navbu {
     background-color: #13133a9a;
 }
 
@@ -97,7 +98,7 @@ header {
     top: 10px;
     left: 20%;
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgba(201, 201, 201, 0.295);
 }
 
@@ -151,6 +152,10 @@ header {
 
 .Darkmod .none {
     display: none;
+}
+
+.Language{
+    cursor: pointer;
 }
 
 .Le_box .none {
@@ -380,6 +385,30 @@ header {
     color: white;
 }
 
+.navbu{
+    display: flex;
+    padding: 20px;
+    background-color: rgba(201, 201, 201, 0.295);
+    font-size: 1.7rem;
+    backdrop-filter: blur(20px);
+    transition: all 0.5s;
+    width: 500px;
+    position: fixed;
+    bottom: 10px;
+    left: 20%;
+    z-index: 2;
+    border-radius: 15px;
+    display: none;
+}
+
+.navbu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 footer {
     width: 100%;
     display: flex;
@@ -438,4 +467,42 @@ a:hover{
     justify-content: center;
     align-items: center;
     border-top:solid 1px #02021a;
+}
+
+@media (max-width:1458px) {
+     .Header.scrolled {
+        width: 700px;
+        left: 26%;
+    }
+
+    .projeBox{
+        gap: 60px;
+    }
+}
+
+@media(max-width:1052px){
+    .Header.scrolled{
+        left:20%;
+    }
+}
+
+@media(max-width:956px) {
+    .Header ul{
+        display: none;
+        width:100px;
+    }
+
+    .Header.scrolled {
+        width: 250px;
+        left:29%;
+    }
+
+    .navbu {
+        display: flex;
+    }
+
+
+    footer {
+        margin-bottom: 65px;
+    }
 }
