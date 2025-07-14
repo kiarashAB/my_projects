@@ -36,35 +36,69 @@ document.getElementById("Le_box").addEventListener("click", () => {
     english.classList.toggle("none");
 
 
-    if (english.classList.contains("none")) {
-        localStorage.setItem("lang", "fa");
-    } else {
-        localStorage.setItem("lang", "en");
-    }
+    // if (english.classList.contains("none")) {
+    //     localStorage.setItem("lang", "fa");
+    // } else {
+    //     localStorage.setItem("lang", "en");
+    // }
 
-    function updateLanguage() {
-        const lang = localStorage.getItem("lang") || "fa";
-    
-        if (lang === "en") {
-            document.getElementById("F").classList.add("none");
-            document.getElementById("E").classList.remove("none");
-    
-            // اینجارو با ترجمه‌های خودت پر کن
-            document.getElementById("Home_Eror").innerText = "Home";
-            // بقیه المان‌ها رو هم تغییر بده
-            // مثلاً:
-            // document.querySelector("#nav-about").innerText = "About Me";
-    
-        } else {
-            document.getElementById("F").classList.remove("none");
-            document.getElementById("E").classList.add("none");
-    
-            document.getElementById("Home_Eror").innerText = "خانه";
-            // بقیه المان‌ها...
-        }
-    }
-    updateLanguage();
-});
+//     function updateLanguage() {
+//         const lang = localStorage.getItem("lang") || "fa";
+
+//         if (lang === "en") {
+//             document.getElementById("F").classList.add("none");
+//             document.getElementById("E").classList.remove("none");
+//             document.querySelector("html").setAttribute("dir","ltr")
+//             // اینجارو با ترجمه‌های خودت پر کن
+//             document.querySelector(".Re_Header").innerHTML =
+//                 ` 
+//              <ul>
+//                     <li id="Home_Eror">Home</li>
+//                     <a href="">
+//                         <li>Abut me</li>
+//                     </a>
+//                     <a href="">
+//                         <li>mySample</li>
+//                     </a>
+//                     <a href="">
+//                         <li>Skills</li>
+//                     </a>
+//                     <a href="">
+//                         <li>Call</li>
+//                     </a>
+//                 </ul>
+//                 `;
+//             // بقیه المان‌ها رو هم تغییر بده
+//             // مثلاً:
+//             // document.querySelector("#nav-about").innerText = "About Me";
+
+//         } else {
+//             document.getElementById("F").classList.remove("none");
+//             document.getElementById("E").classList.add("none");
+//              document.querySelector("html").setAttribute("dir","rtl");
+//             document.querySelector(".Re_Header").innerHTML =
+//                 ` 
+//              <ul>
+//                     <li id="Home_Eror">خانه</li>
+//                     <a href="">
+//                         <li>درباره من</li>
+//                     </a>
+//                     <a href="">
+//                         <li>نمونه کارهام</li>
+//                     </a>
+//                     <a href="">
+//                         <li>مهارت ها</li>
+//                     </a>
+//                     <a href="">
+//                         <li>تماس</li>
+//                     </a>
+//                 </ul>
+//                 `;
+//             // بقیه المان‌ها...
+//         }
+//     }
+//     updateLanguage();
+ });
 
 
 const abutkiarash = {
@@ -74,7 +108,7 @@ const abutkiarash = {
     sabege: 3,
     proje: 1,
     Satisfied_customer: 1,
- 
+
 }
 
 document.getElementById("blur_but").innerHTML =
@@ -89,8 +123,8 @@ document.getElementById("blur_but").innerHTML =
                 </div>
 `;
 
-document.querySelector(".BoxAmar").innerHTML = 
-`
+document.querySelector(".BoxAmar").innerHTML =
+    `
        <div class="Box">
             <h2>${abutkiarash.proje}+</h2>
             <p>پروژه تکمیل شده</p>
@@ -105,14 +139,14 @@ document.querySelector(".BoxAmar").innerHTML =
         </div>
 `
 
-window.addEventListener("scroll", ()=>{
+window.addEventListener("scroll", () => {
     const header = document.getElementById("hedear");
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
 });
